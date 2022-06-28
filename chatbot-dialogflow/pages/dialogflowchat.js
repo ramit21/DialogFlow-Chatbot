@@ -20,7 +20,7 @@ class DialogFlowChat extends Component {
             <df-messenger
             intent="WELCOME"
             chat-title="Monyx Bot"
-            agent-id="XXXXXXXXXXXXXXX"
+            agent-id="XXXXXXXXX"
             language-code="en"
             ></df-messenger>
         );

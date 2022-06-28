@@ -14,3 +14,19 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.container {
+  background-repeat: no-repeat;
+  min-height: 940px;
+  height: 100%;
+  margin: 10px 30px;
+}
+
+df-messenger {
+  --df-messenger-button-titlebar-color: #1a791f;
+  --df-messenger-chat-background-color: #1fbe34;
+  --df-messenger-font-color: #000;
+  --df-messenger-send-icon: #00adff;
+  --df-messenger-user-message: #92ebb4;
+  --df-messenger-chip-border-color:#92ebb4;
+}
