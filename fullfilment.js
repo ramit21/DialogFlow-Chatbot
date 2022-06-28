@@ -37,7 +37,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   
   function buyFunctionHandler(agent) {
     const params = agent.parameters;
-    const city = params.buyCity;
+    const city = params.City;
     const startPrice = params.startPrice;
     const endPrice = params.endPrice;
 
