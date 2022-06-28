@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import KommunicateChat from './chat'
+import DialogFlowChat from './dialogflowchat'
 
 export default function Home() {
   return (
@@ -11,8 +12,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-     <KommunicateChat></KommunicateChat>
-
+      <DialogFlowChat></DialogFlowChat>
+      
     </div>
   )
+  //<KommunicateChat></KommunicateChat>
+  //<DialogFlowChat></DialogFlowChat>
 }
