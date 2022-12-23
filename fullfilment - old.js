@@ -1,3 +1,4 @@
+
 const functions = require('firebase-functions');
 const {WebhookClient} = require('dialogflow-fulfillment');
 const {Card, Suggestion} = require('dialogflow-fulfillment');
@@ -54,3 +55,28 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
 });
 
 
+/* Another way of using Google Assistant:
+
+const functions = require('firebase-functions');
+const {dialogflow, SimpleResponse, Suggestions } = require('actions-on-google');
+
+const app = dialogflow();
+
+app.intent('BookTaxi', (conv) => {
+  const params = conv.parameters;
+  const cabType = params.CabType;
+  if(cabType){
+    conv.ask("Cab booked of type " + cabType.toLowerCase());
+    return;
+  }
+    
+   conv.ask("Select your cab type (Sedan/SUV)");
+   conv.ask(new Suggestions(["SUV","Sedan"]));
+ 
+});
+
+exports.dialogflowFirebaseFulfillment = functions
+  .https.onRequest(app);
+  
+  
+*/
